@@ -12,7 +12,9 @@
     'category' : 'Custom Modules / Technical Training',
     'depends' : ['base'],
     'data': [],
-    'demo': [],
+    'demo': [
+        'demo/course_demo.xml'
+    ],
     'application' : True,
 
 }   
