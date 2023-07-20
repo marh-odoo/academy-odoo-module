@@ -18,7 +18,8 @@
         'data/session_data.xml',
         'views/academy_menu_items.xml',
         'views/course_views.xml',
-        'views/sessions_views.xml'
+        'views/sessions_views.xml',
+        'views/sale_views_inherit.xml'
     ],
     'demo': [
         'demo/course_demo.xml'

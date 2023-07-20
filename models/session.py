@@ -13,7 +13,7 @@ class Sessions(models.Model):
 
     duration= fields.Integer(string="Session Duration", compute="_compute_session_duration", invers="_inverse_session_duration", readonly=False)
 
-    course_id = fields.Many2one(comodel_name="academy.course", string = "Course", ondelete="cascade")
+    course_id = fields.Many2one(comodel_name="academy.course", string = "Course", ondelete="cascade", required=True)
     instructor_id = fields.Many2one(comodel_name="res.users", string = "Instructor", ondelete="restrict")
     student_ids = fields.Many2many(comodel_name="res.partner", string = "Students")
     description = fields.Text(related="course_id.description")
