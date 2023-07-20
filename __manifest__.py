@@ -10,7 +10,7 @@
     'author' : 'Mauricio Rubio',
     'website' : 'www.odoo.com',
     'category' : 'Custom Modules / Technical Training',
-    'depends' : ['base'],
+    'depends' : ['sale'],
     'data': [
         'security/academy_groups.xml',
         'security/ir.model.access.csv',
