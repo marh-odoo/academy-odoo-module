@@ -10,7 +10,7 @@
     'author' : 'Mauricio Rubio',
     'website' : 'www.odoo.com',
     'category' : 'Custom Modules / Technical Training',
-    'depends' : ['sale'],
+    'depends' : ['sale','website'],
     'data': [
         'security/academy_groups.xml',
         'security/ir.model.access.csv',
@@ -19,7 +19,8 @@
         'views/academy_menu_items.xml',
         'views/course_views.xml',
         'views/sessions_views.xml',
-        'views/sale_views_inherit.xml'
+        'views/sale_views_inherit.xml',
+        'views/academy_web_teplates.xml'
     ],
     'demo': [
         'demo/course_demo.xml'

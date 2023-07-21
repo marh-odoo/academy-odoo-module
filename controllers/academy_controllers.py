@@ -3,3 +3,17 @@ class Academy(http.Controller):
     @http.route('/academy/')
     def index(self, **kw):
         return 'Hello World'
+    
+    @http.route('/academy/courses/', auth='public', website=True)
+    def courses(self, **kw):
+        courses = http.request.env['academy.course'].search([])
+        return http.request.render('academy.course_website',{
+            'courses':courses,
+        })
+    
+    @http.route('/academy/<model("academy.session"):session>/', auth="public", website=True)
+    def session(self, **kw):
+        return http.request.render('academy.session_website',{
+            'session' : sesision,
+        })
+
